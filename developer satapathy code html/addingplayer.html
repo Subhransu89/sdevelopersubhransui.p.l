@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+             ADDING PLAYER BY USER
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+      
+      <div class="container">
+        <h2>Reg. Form</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="idno">Id:</label>
+                <input type="text" class="form-control" id="idno" placeholder="Enter the id" name="id">
+              </div>
+
+          <div class="form-group">
+            <label for="playername">playername:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter playername" name="playername">
+          </div>
+          <div class="form-group">
+            <label for="from">P</label>
+            <input type="text" class="form-control" id="from" placeholder="from" name="from">
+          </div>
+          <div class="form-group">
+          <label for="price">Password:</label>
+          <input type="text" class="form-control" id="price" placeholder="Enter password" name="price">
+        </div>
+        <div class="form-group">
+        <label for="isplaying">isplaying:</label>
+        <input type="text" class="form-control" id="price" placeholder="is playing" name="isplaying">
+      </div>
+      <div class="form-group">
+      <label for="isplaying">description:</label>
+      <input type="text" class="form-control" id="price" placeholder="description" name="description">
+    </div>
+         
+          <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      
+      </body>
+      <script>
+function saveData()
+{
+let idno,playername,from,price,isplaying,description;
+idno=document.getElementById("idno").value;
+playername=document.getElementById("playername").value;
+from=document.getElementById("from").value;
+price=document.getElementById("price").value;
+isplaying=document.getElementById("isplaying").value;
+description=document.getElementById("description").value;
+
+
+ 
+
+let user_records=new Array();
+user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+if(user_records.some((v)=>{return v.playername==playername}))
+{
+  alert("duplicate data");
+}
+else
+{
+  user_records.push({
+  "idno":idno,
+  "playername":playername,
+  "from":from,
+  "price":price,
+  "isplaying":isplaying,
+  "description":description
+})
+localStorage.setItem("users",JSON.stringify(user_records));
+}
+
+}
+          </script>
+      </html>

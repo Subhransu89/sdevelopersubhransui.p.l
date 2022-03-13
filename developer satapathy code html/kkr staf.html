@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<head>
+  <title>
+
+  </title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="C:\Users\SHUVASHIS PANDA\Desktop\New folder\playerlist.css">
+</head>
+
+<body>
+  <div classs="logo" style="background-color: black">
+    <center>
+    <img src="https://wallpaperaccess.com/full/3746298.jpg" height="200px" width="200px">
+    </center>
+
+</div>
+<div class="menu">
+    <table class="custum-class">
+        <tr>
+            <td style="float: left;">
+                <a href="index.html">
+                <button>
+                    HOME
+                </button>
+                </a>
+            </td>
+            <td>
+                <marquee>
+                    <font face="Bernard MT Condensed" size="3" color="blue">
+                        WELCOME TO KKR FAMILY
+                    </font>
+                </marquee>
+            </td>
+            <td style="float: right;">
+                <a href="kkr.html">
+                <button>
+                    BACK
+                </button>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+       <img src="   https://static.abplive.com/ani-images/Shivam_MaviApril28.jpg?impolicy=abp_images&imwidth=720 " height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+           Kolkatta knight riders
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Ms kulkarni</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50k</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Batsman</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+   <img src=" https://images.firstpost.com/wp-content/uploads/2016/05/Andre-Russel_BCCI.jpg " height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="3">
+           kolkatta 
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Andrew rasl</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> all rounder</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Bowler</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+       <img src="  data:image/jpeg;base64,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 " height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+            kkr
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5">  Rabindra ashwin</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Allrounder</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+       <img src=" https://m.cricbuzz.com/a/img/v1/192x192/i1/c187877/rinku-singh.jpg" height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+  chenai super kings
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5">   ks lara</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Bowler</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+       <img src="   data:image/jpeg;base64,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 " height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+         kolkatta riders
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Lahit modi</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50k</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Allrounder</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+   <img src="  https://c.ndtvimg.com/2021-04/6nciiak_nitish-rana-kkr-instagram_625x300_03_April_21.jpg?im=FitAndFill,algorithm=dnn,width=1200,height=675 " height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+             kolkatta riders
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5">   mc lara</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Allrounder</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+       <img src="   https://static.toiimg.com/thumb/msid-88034212,imgsize-36834,width-400,resizemode-4/88034212.jpg" height="200px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+            Kolkatta knight riders
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="5">  narini</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> Bowler</font>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+       <img src="https://cdn5.newsnationtv.com/images/2021/08/26/pjimage-2020-05-10t110238-1589088801-46.jpg" height="100px" width="200px">
+       <br>
+       <font face="Algerian" size="5" color="blue">
+         Team name:</font><font face="arial black" color="black" size="5">
+           kolkata
+         </font>
+       </font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Name: 
+  
+       </font>
+       <font face="arial black" color="black" size="3">Morgan</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        playing status: 
+  
+       </font>
+       <font face="arial black" color="black" size="3"> Playing</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        price: 
+  
+       </font>
+       <font face="arial black" color="black" size="5"> 50lc</font>
+       <br>
+       <font face="Algerian" size="5" color="blue">
+        Role: 
+  
+       </font>
+       <font face="arial black" color="black" size="3"> Bowler</font>
+      </div>
+    </div>
+    <div class="column">
+        <div class="card">
+         <img src="    https://static.toiimg.com/thumb/msid-63568246,width-1200,height-900,resizemode-4/.jpg"    height="200px" width="200px">
+         <br>
+         <font face="Algerian" size="5" color="blue">
+           Team name:</font><font face="arial black" color="black" size="5">
+            kolkatta riders
+           </font>
+         </font>
+         <br>
+         <font face="Algerian" size="5" color="blue">
+          Name: 
+    
+         </font>
+         <font face="arial black" color="black" size="5">  lara
+         <br>
+         <font face="Algerian" size="5" color="blue">
+          playing status: 
+    
+         </font>
+         <font face="arial black" color="black" size="5"> Playing</font>
+         <br>
+         <font face="Algerian" size="5" color="blue">
+          price: 
+    
+         </font>
+         <font face="arial black" color="black" size="5"> 50lc</font>
+         <br>
+         <font face="Algerian" size="5" color="blue">
+          Role: 
+    
+         </font>
+         <font face="arial black" color="black" size="5"> Bowler</font>
+        </div>
+      </div>
+      
+     
+    
+  </div>
